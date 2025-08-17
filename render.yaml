@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fixify-frontend
+    env: static
+    plan: free
+    buildCommand: VITE_API_URL=https://startup-main.onrender.com/api npm ci --production=false && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://startup-main.onrender.com/api
+    autoDeploy: true 
