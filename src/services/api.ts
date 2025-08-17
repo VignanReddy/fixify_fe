@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://startup-main.onrender.com/api';
+const API_BASE_URL = 'https://fixify-backend.onrender.com/api';
 
 export interface VideoAnalysisResponse {
   success: boolean;
